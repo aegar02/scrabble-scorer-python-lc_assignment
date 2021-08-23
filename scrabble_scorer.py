@@ -28,7 +28,13 @@ def old_scrabble_scorer(word):
 # don't change the names or your program won't work as expected.
 
 def initial_prompt():
-   print("Let's play some Scrabble!\n")
+   def initial_prompt():
+    print("Let's play some Scrabble!\n")
+    print("Enter a word to score: ")
+    user_input = input()
+
+    return user_input
+
 
 
 def simple_scorer():
